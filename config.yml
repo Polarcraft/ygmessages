@@ -1,0 +1,9 @@
+#Make sure to leave a space after your messages.
+#%PLAYER% is the variable for the player#
+#So for example %PLAYER% = Polarcraft in game#
+new-join-message: '&eWelcome %PLAYER%!'
+old-join-message: '&eWelcome back %PLAYER%!'
+leave-message: '&eEveryone say bye to %PLAYER%!'
+kick-whitelist-message: '&e%PLAYER% you are not whitelisted!'
+kick-full-message: '&e%PLAYER% the server is full! Try again later!'
+server-closed-message: '&e%PLAYER% the server has been closed! Please check in later!' 
