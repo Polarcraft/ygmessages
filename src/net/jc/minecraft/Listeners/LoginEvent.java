@@ -25,14 +25,14 @@ public class LoginEvent implements Listener {
         Player p = event.getPlayer();
         if (event.getResult().equals(result.KICK_WHITELIST))
         {
-        	String WhitelistEvent = ChatColor.translateAlternateColorCodes('&', (String)plugin.getConfig().getString("kick-whitelist-message").replaceAll("%PLAYER%", p.getName().toString()));
+            String WhitelistEvent = ChatColor.translateAlternateColorCodes('&', (String)plugin.getConfig().getString("kick-whitelist-message").replaceAll("%PLAYER%", p.getName().toString()));
             event.setKickMessage(WhitelistEvent);
         }
         
         if (event.getResult().equals(org.bukkit.event.player.PlayerLoginEvent.Result.KICK_FULL))
         {
-        	String FullEvent = ChatColor.translateAlternateColorCodes('&', (String)plugin.getConfig().getString("kick-full-message").replaceAll("%PLAYER%", p.getName().toString()));
-        	event.setKickMessage(FullEvent);
+            String FullEvent = ChatColor.translateAlternateColorCodes('&', (String)plugin.getConfig().getString("kick-full-message").replaceAll("%PLAYER%", p.getName().toString()));
+            event.setKickMessage(FullEvent);
         }
     }
 }
